@@ -14,6 +14,7 @@ export default ({
     <Consumer>
       {(context) => (
         <Route
+        // props
           {...rest}
           render={(props) =>
             context.authenticatedUser ? (

@@ -40,7 +40,7 @@ export default (props) => {
     </div>
   );
 };
-
+//!  passing an object "errors" as an argument to the function, but the destructuring uses only the named properties of the object
 function ErrorsDisplay({ errors }) {
   let errorsDisplay = null;
 

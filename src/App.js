@@ -27,6 +27,9 @@ const UserSignUpWithContext = withContext(
 const UserSignInWithContext = withContext(
   UserSignIn
 );
+const UserSignOutWithContext = withContext(
+  UserSignOut
+);
 
 export default () => (
   <Router>
@@ -53,7 +56,7 @@ export default () => (
         />
         <Route
           path="/signout"
-          component={UserSignOut}
+          component={UserSignOutWithContext}
         />
         <Route component={NotFound} />
       </Switch>
